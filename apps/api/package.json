@@ -1,0 +1,12 @@
+{
+  "name": "@semantic/api",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@semantic/analytics-core": "workspace:*",
+    "@semantic/attendance": "workspace:*",
+    "@semantic/database": "workspace:*",
+    "@semantic/employees": "workspace:*",
+    "@semantic/performance": "workspace:*"
+  }
+}

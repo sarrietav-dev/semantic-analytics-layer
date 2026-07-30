@@ -1,0 +1,6 @@
+{
+  "name": "@semantic/database",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "semantic-analytics-mvp",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "modules/*"
+  ],
+  "scripts": {
+    "dev": "bun --watch apps/api/src/index.ts",
+    "start": "bun apps/api/src/index.ts",
+    "format": "prettier --write \"{apps,packages,modules,tests}/**/*.ts\" \"*.{json,yml,md}\" \"docs/**/*.md\"",
+    "format:check": "prettier --check \"{apps,packages,modules,tests}/**/*.ts\" \"*.{json,yml,md}\" \"docs/**/*.md\"",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test tests/unit",
+    "test:integration": "bun test tests/integration",
+    "test:all": "bun run test && bun run test:integration"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "latest",
+    "typescript": "latest"
+  }
+}

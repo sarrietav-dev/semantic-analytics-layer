@@ -1,0 +1,10 @@
+{
+  "name": "@semantic/employees",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "@semantic/analytics-core": "workspace:*",
+    "@semantic/database": "workspace:*"
+  }
+}
